@@ -1,20 +1,20 @@
-# School Management API
+1. School Management API
 
-## Tech Stack
+2. Tech Stack
 
 * Node.js
 * Express.js
 * MySQL (Railway)
 * Render (Deployment)
 
-## Features
+3. Features
 
 * Add School API
 * List Schools sorted by proximity
 * Input validation
 * RESTful API design
 
-## Setup Instructions
+4. Setup Instructions
 
 1. Clone the repository
 2. Install dependencies:
@@ -37,13 +37,14 @@
    node src/server.js
    ```
 
-## Deployment Details
+5. Deployment Details
 
 Backend Hosting
 
 * Deployed on Render
 * Live API:
-  https://educase-school-management-api-nvly.onrender.com
+  Base URl : https://educase-school-management-api-nvly.onrender.com
+  Test Endpoint: https://educase-school-management-api-nvly.onrender.com/api/listSchools?latitude=28.7&longitude=77.1
 
 Database
 
@@ -55,7 +56,7 @@ Environment Configuration
 * Local: uses `.env` with MySQL
 * Production: uses `MYSQL_PUBLIC_URL`
 
-## API Endpoints
+6. API Endpoints
 
 Add School
 POST `/api/addSchool`
@@ -72,11 +73,11 @@ POST `/api/addSchool`
 List Schools
 GET `/api/listSchools?latitude=28.7&longitude=77.1`
 
-## Postman Collection
+7. Postman Collection
 
 * Included in repository: `postman_collection.json`
 
-## Notes
+8. Notes
 
 * Distance calculated using Haversine formula
 * Modular MVC structure
